@@ -1,1 +1,15 @@
-<p>car-list works!</p>
+<section class="carList">
+    <h2>Car list</h2>
+
+    <div class="carList__grid">
+        <div class="card" style="width: 18rem;" *ngFor="let oneCar of allCars">
+            <img [src]="oneCar.image" class="card-img-top" [alt]="oneCar.title">
+            <div class="card-body">
+                <h5 class="card-title">{{ oneCar.title | titlecase }}</h5>
+                <p class="card-text">{{oneCar.description}}</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>

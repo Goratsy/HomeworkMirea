@@ -1,0 +1,13 @@
+.carList {
+    margin: 32px 0;
+    
+}
+.carList h2 {
+    text-align: center;
+}
+
+.carList__grid {
+    margin: 16px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
