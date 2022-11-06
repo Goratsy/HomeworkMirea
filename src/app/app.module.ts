@@ -12,7 +12,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 
 import { RegistrationComponent } from './registration/registration.component';
 
-
+import { FormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
   {path: '', redirectTo: 'carlist', pathMatch: 'full'},
@@ -36,9 +36,10 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent, HeaderComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

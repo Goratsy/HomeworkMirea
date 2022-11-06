@@ -1,0 +1,11 @@
+.registration {
+    margin: 32px 0;
+}
+
+.isCorrectForm {
+    color: rgb(0, 208, 0);
+}
+
+.notIsCorrectForm {
+    color: red;
+}

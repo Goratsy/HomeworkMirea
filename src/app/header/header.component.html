@@ -4,9 +4,9 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link" aria-current="page" routerLink="carlist" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">CarList</a>
-          <a class="nav-link" routerLink="login" routerLinkActive="active">Login</a>
-          <a class="nav-link" routerLink="registration" routerLinkActive="active">Registration</a>
-          <a class="nav-link" style="color: rgb(255, 81, 81); cursor: pointer;">Sign out</a>
+          <a class="nav-link" routerLink="login" routerLinkActive="active" *ngIf="!isSingin">Login</a>
+          <a class="nav-link" routerLink="registration" routerLinkActive="active" *ngIf="!isSingin"  style="border: 1px solid black; border-radius: 5px;">Registration</a>
+          <a class="nav-link" style="color: rgb(255, 81, 81); cursor: pointer;" *ngIf="isSingin">Sign out</a>
         </div>
       </div>
     </div>

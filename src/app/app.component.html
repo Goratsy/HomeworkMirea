@@ -1,10 +1,12 @@
 <body>
     <header>
-        <app-header ></app-header>
+        <app-header [isSingin]="isSignin"></app-header>
     </header>
     <main>
         <div class="main__container">
-            <router-outlet></router-outlet>
+            <router-outlet>
+                <ng-component ></ng-component>
+            </router-outlet>
         </div>
     </main>
 </body>

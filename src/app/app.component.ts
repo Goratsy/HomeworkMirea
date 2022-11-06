@@ -13,5 +13,5 @@ export class AppComponent {
 
   allCars: IAllCars[] = allCars;
 
-  isSignin: boolean = false;
+  isSignin: boolean = Boolean(window.localStorage.getItem('isSignin'));
 }
